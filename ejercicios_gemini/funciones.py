@@ -33,6 +33,8 @@ def registrar_alimento(bitacora_diaria) :
         print("Error. Debe ingresar un número.")
         return
     
+    bitacora_diaria[nombre] = [kilocalorias, proteina]
+    
 #___________________________________________________
 
 def ver_bitacora(bitacora_diaria) :
@@ -58,4 +60,3 @@ def buscar_alimento(bitacora_diaria) :
     if nombre in bitacora_diaria :
         datos = bitacora_diaria[nombre]
         print(f"Encontrado! -> kcal: {datos[0]} | proteína: {datos[1]}g")
-        

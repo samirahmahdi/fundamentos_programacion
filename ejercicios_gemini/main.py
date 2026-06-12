@@ -19,6 +19,7 @@ while True :
 
     except ValueError :
         print("Error, debe ingresar un número.")
+        continue
 
     if op == 1 :
         fn.registrar_alimento(bitacora_diaria)
@@ -36,4 +37,6 @@ while True :
 
     else: 
         print("Ingrese una opción válida del 1 al 6.")
+
+        
    
